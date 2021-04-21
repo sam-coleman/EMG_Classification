@@ -30,7 +30,7 @@ classdef extract_features
             % i_start: index to start mean
             % i_end: index to end mean
             % returns mean across dim
-            res = calc_mean(abs(data), i_start, i_end, dim);
+            res = extract_features.calc_mean(abs(data), i_start, i_end, dim);
         end
         
         function res = calc_rms(data, i_start, i_end)
@@ -94,19 +94,19 @@ classdef extract_features
                     %channel 1
                     if ((data(1,i,trial) > 0 && data(1,i+1,trial) < 0) || (data(1,i,trial) < 0 && data(1,i+1,trial) > 0)) ...
                             && (abs(data(1,i,trial)) - data(1,i+1,trial) >= thresh)
-                        zc(1,trial) = zc(1,trial) +  1
+                        zc(1,trial) = zc(1,trial) +  1;
                     end
                     
                     %channel 2
                     if ((data(2,i,trial) > 0 && data(2,i+1,trial) < 0) || (data(2,i,trial) < 0 && data(2,i+1,trial) > 0)) ...
                             && (abs(data(2,i,trial)) - data(2,i+1,trial) >= thresh)
-                        zc(2,trial) = zc(2,trial) + 1
+                        zc(2,trial) = zc(2,trial) + 1;
                     end
                     
                     %channel 3
                     if ((data(3,i,trial) > 0 && data(3,i+1,trial) < 0) || (data(3,i,trial) < 0 && data(3,i+1,trial) > 0)) ...
                             && (abs(data(3,i,trial)) - data(3,i+1,trial) >= thresh)
-                        zc(3,trial) = zc(3,trial)+ 1
+                        zc(3,trial) = zc(3,trial)+ 1;
                     end
                 end
             end
