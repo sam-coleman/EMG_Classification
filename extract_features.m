@@ -38,7 +38,7 @@ classdef extract_features
             %data: EMG data
             %i_start: index to start at
             %i_end: index to end at
-            res = squeeze(rms(EMG.data(:,i_start:i_end,:), 2));
+            res = squeeze(rms(data(:,i_start:i_end,:), 2));
         end
         
         function res = calc_variance(data)
