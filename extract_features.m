@@ -1,6 +1,5 @@
 classdef extract_features
     %extract_features Extract features from EMG data
-    %   Detailed explanation goes here
     
     properties
     end
@@ -112,12 +111,6 @@ classdef extract_features
             end
         end
         
-        function m2 = calc_m2(data)
-            %calc_m2 calcualtes the 2nd order moment for each trial per channel
-            %data: EMG data
-            %TODO: Complete this function
-        end
-        
         function iemg = integratedEMG(data)
             %integratedEMG iEMG for data for each trial across points for each
             %channel
@@ -165,14 +158,6 @@ classdef extract_features
         
         function LD = logdetector(data, N)
             LD = squeeze(exp(sum(log(data),2)/N));
-        end
-        
-        function MPV = meanpkval(data, N)
-            %TODO Fix Output Size - think it should be [3 X 180]
-            [row, col] = find(data > rms(data));
-            for N = 1:size(data,2)
-                MPV(N) = mean(data(row(col==N),N));
-            end
         end
     end
 end
