@@ -19,7 +19,7 @@ Use machine learning to determine if someone threw a rock, paper, or scissors fr
 [Final Results executive summary report](https://github.com/sam-coleman/EMG_Classification/blob/main/Writeup.pdf).
 Our best classifier used an SVM algorithm with Average Amplitude Change (AAC) and Absolute Value of the Mean (abs_mean) across channels 1 and 2 as the features. Our validation classification accuracy is 86.11% on our test data and the confusion matrix is below.
 
-[Confusion Matrix](/figures/list1ConfusionPerc.jpg)
+![Confusion Matrix](/figures/list1ConfusionPerc.jpg)
 
 ## Authors
 [Sam Coleman](https://github.com/sam-coleman) and [Rishita Sarin](https://github.com/rishitasarin)
