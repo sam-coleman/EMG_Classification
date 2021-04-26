@@ -14,6 +14,7 @@ Use machine learning to determine if someone threw a rock, paper, or scissors fr
 - [Documentation of Feature Selection](https://docs.google.com/spreadsheets/d/19WO7bkwY86gnjzJEToPZt_6A1pq4m1qWPwOc_FzCt88/edit?usp=sharing) is a spreadsheet holding the results of different features and algorithms.
 - [finalModels.mlx](https://github.com/sam-coleman/EMG_Classification/blob/main/finalModels.mlx) trains (and saves) the top three classifiers.
 - [Test.mlx](https://github.com/sam-coleman/EMG_Classification/blob/main/test.mlx) runs our algorithms on the test data.
+- [Writeup.mlx](https://github.com/sam-coleman/EMG_Classification/blob/main/Writeup.mlx) contains our writeup. [Access pdf](https://github.com/sam-coleman/EMG_Classification/blob/main/Writeup.pdf) of writeup
 
 ## Results
 [Final Results executive summary report](https://github.com/sam-coleman/EMG_Classification/blob/main/Writeup.pdf).
